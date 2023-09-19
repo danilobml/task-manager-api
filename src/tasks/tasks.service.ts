@@ -38,38 +38,4 @@ export class TasksService {
     await this.taskRepository.save(task);
     return task;
   }
-
-  // private tasks: Task[] = [];
-  //
-  // getAllTasks(): Task[] {
-  //   return this.tasks;
-  // }
-  //
-  // getFilteredTasks(filterDto: GetTasksFilterDto): Task[] {
-  //   const { status, search } = filterDto;
-  //   let tasks = this.getAllTasks();
-  //   if (status) tasks = tasks.filter((task: Task) => task.status === status);
-  //   if (search)
-  //     tasks = tasks.filter(
-  //       (task: Task) =>
-  //         task.description.toLowerCase().includes(search.toLowerCase()) ||
-  //         task.title.toLowerCase().includes(search.toLowerCase()),
-  //     );
-  //   return tasks;
-  // }
-  //
-  // deleteTask(id: string): string {
-  //   const found = this.getTaskById(id);
-  //   const filteredTasks = this.tasks.filter(
-  //     (task: Task) => task.id !== found.id,
-  //   );
-  //   this.tasks = filteredTasks;
-  //   return 'Task successfully deleted';
-  // }
-  //
-  // updateTaskStatus(id: string, status: TaskStatus): Task {
-  //   const task = this.getTaskById(id);
-  //   task.status = status;
-  //   return task;
-  // }
 }
